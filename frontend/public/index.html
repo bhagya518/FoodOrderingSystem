@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d6efd" />
+    <meta name="description" content="Modern React App with Smooth UI" />
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-xh6lT+G1wO1FrgNfF0W1e0y3ZqvkaeLJrJjM6U+nKp0qfGk7BLfCsd5t0hC8uKx+EJ2pXxO8W4l59t5EztO2AA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Title -->
+    <title>🍴 Canteen Ordering System</title>
+
+    <!-- Styling for a Nice Loading Experience -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f0f4ff, #e4ebff);
+        color: #333;
+      }
+
+      #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loading-screen {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #555;
+        animation: fade 1.2s ease-in-out infinite alternate;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.5;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root">
+      <div class="loading-screen">
+        <i class="fa-solid fa-spinner fa-spin"></i> Loading Canteen App...
+      </div>
+    </div>
+  </body>
+</html>
